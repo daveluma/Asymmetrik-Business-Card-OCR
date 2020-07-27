@@ -41,7 +41,7 @@ def BusinessCardParser(f):
 
   for x in f:
       #if input from line matches "firstname lastname" format add to list
-      name_match = re.search(r'\b([A-Z]+[a-z]+)\b \b([A-Z]+[a-z]+)\b', x)
+      name_match = re.search(r'\b([A-Z]+[a-z]*)\b \b([A-Z]+[a-z]*)\b', x)
       if name_match:
           name_list.append(str(i) + ") " + name_match.group(0))
           i += 1
