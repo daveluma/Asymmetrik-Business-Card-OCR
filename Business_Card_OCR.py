@@ -88,6 +88,7 @@ def BusinessCardParser(f):
   msg = tk.Message(root, text = ("Name: " + str(name) + "\n" + "Phone: " + str(tel) + "\n" + "Email: " + str(email)), width = 1000)
   msg.config(font=("times",24))
   msg.pack()
+  root.mainloop()
 
 BusinessCardParser(f)
 
